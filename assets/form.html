@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title>Perjanjian Sewa Menyewa</title>
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="/generate" method="post">
+				<span class="contact100-form-title">
+					Perjanjian Sewa Menyewa
+				</span>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Nama Pemilik</span>
+					<input class="input100" type="text" name="ownerName" placeholder="Nama Pemilik">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Nama Penyewa</span>
+					<input class="input100" type="text" name="tenantName" placeholder="Nama Penyewa">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Alamat Pemilik</span>
+					<input class="input100" type="text" name="ownerAddress" placeholder="Alamat Pemilik">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Alamat Penyewa</span>
+					<input class="input100" type="text" name="tenantAddress" placeholder="Alamat Penyewa">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">No KTP Pemilik</span>
+					<input class="input100" type="text" name="ownerID" placeholder="357xxxx">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">No KTP Penyewa</span>
+					<input class="input100" type="text" name="tenantID" placeholder="357xxxx">
+				</div>
+
+				<div class="wrap-input100 bg1">
+					<span class="label-input100">Nama Agent Properti</span>
+					<input class="input100" type="text" name="witnessName" placeholder="Nama Agen Properti">
+				</div>
+
+				<div class="wrap-input100 bg1">
+					<span class="label-input100">Alamat Agent Properti</span>
+					<input class="input100" type="text" name="witnessAddress" placeholder="Alamat Agen Properti">
+                </div>
+                
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Nama Apartemen</span>
+                    <input class="input100" type="text" name="apartmentName" placeholder="Bellagio">
+                </div>
+
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Alamat Apartemen</span>
+                    <input class="input100" type="text" name="apartmentAddress" placeholder="Jl. Mega Kuningan">
+                </div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Tanggal Masuk</span>
+					<input class="input100" type="text" name="rentStartDate" placeholder="28 Februari 2018">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Tanggal Keluar</span>
+					<input class="input100" type="text" name="rentEndDate" placeholder="28 Februari 2019">
+                </div>
+                
+                <div class="wrap-input100 bg1">
+                    <span class="label-input100">Jangka Waktu Sewa</span>
+                    <input class="input100" type="text" name="rentTerm" placeholder="1 (Satu) Tahun">
+                </div>
+
+				<div class="wrap-input100 bg1">
+					<span class="label-input100">Harga Sewa per Jangka Waktu Sewa</span>
+					<input class="input100" type="text" name="rentPrice" placeholder="1.000.456">
+				</div>
+
+				<div class="wrap-input100 bg1">
+					<span class="label-input100">Deposit</span>
+					<input class="input100" type="text" name="deposit" placeholder="500.000">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Maintenance Fee</span>
+					<input class="input100" type="text" name="maintenanceFee" placeholder="123.456">
+				</div>
+
+				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<span class="label-input100">Maintenance Period</span>
+					<input class="input100" type="text" name="maintenancePeriod" placeholder="6 Bulan">
+				</div>
+
+				<div class="wrap-input100 bg1">
+					<span class="label-input100">Total Pembayaran</span>
+					<input class="input100" type="text" name="totalPayment" placeholder="1.123.912">
+				</div>
+
+				<div class="wrap-input100 bg1">
+					<span class="label-input100">Denda per hari</span>
+					<input class="input100" type="text" name="finePerDay" placeholder="300.000">
+				</div>
+
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+            </form>
+            
+        </div>
+        
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form" action="/upload" method="post" encType="multipart/form-data">
+                <div class="wrap-input100 bg1">
+                        <input class="input100" type="file" name="agreementDocument" accept=".docx">
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        <span>
+                            Upload
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+	</div>
+</body>
+</html>
