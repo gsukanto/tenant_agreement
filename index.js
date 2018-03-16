@@ -33,9 +33,11 @@ app.post('/upload', (req, res) => {
 
 app.post('/generate', (req, res) => {
     const inputData = req.body;
-    const filename = `${inputData.tenantName}_${inputData.apartmentName}_${inputData.rentStartDate}`;
+    const filename = `${inputData.tenantName}-${inputData.apartmentName}-${inputData.rentStartDate}.docx`
+                        .replace(/ /g, "_")
+                        .replace(/([A-Z])/g, function($1){return $1.toLowerCase();});
 
-    res.setHeader(`Content-disposition', 'attachment; filename=${filename}`);
+    res.setHeader('Content-disposition', `attachment; filename=${filename}`);
     res.contentType('application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     res.end(converter(inputData));
 });
