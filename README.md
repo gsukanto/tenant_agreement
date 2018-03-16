@@ -22,6 +22,7 @@ npm install
 
 Make sure the agreements folder have write access for node:
 ```bash
+mkdir agreements
 chmod 744 agreements
 ```
 
